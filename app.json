@@ -1,0 +1,29 @@
+{
+  "name": "ZOMBIE-MD",
+  "description": "𝚉𝚘𝚖𝚋𝚒𝚎 𝙸𝙽𝙲𝙻𝚄𝙳𝙴 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝙱𝙾𝚃 𝙸𝚂 𝙼𝚄𝚃𝙴𝙳 𝚃𝙷𝙸𝚂 𝚂𝚃𝙰𝚁𝚃𝙴𝙳",
+  "logo": "https://files.catbox.moe/6qxk37.jpg",
+  "keywords": ["bot"],
+  "success_url": "/",
+
+    "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true,
+      "value": ""
+    },  
+    
+    "MONGODB": {
+      "description": "you can use this public mongodb url if you have your personal key So you can use him.",
+      "required": true,
+      "value": "mongodb://mongo:LIgXtSmvDMcshanQicXNZTLQpnstpplG@switchyard.proxy.rlwy.net:12462"
+    }
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
